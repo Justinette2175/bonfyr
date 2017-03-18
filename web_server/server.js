@@ -9,7 +9,6 @@ const bcrypt = require('bcrypt');
 
 var AccessToken = require('twilio').AccessToken;
 var VideoGrant = AccessToken.VideoGrant;
-var randomUsername = require('./randos');
 
 const knexConfig  = require("./knexfile");
 const knex = require('knex')(knexConfig[ENV]);
