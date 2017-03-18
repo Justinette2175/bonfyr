@@ -1,0 +1,182 @@
+.wrong-dashboard{
+  padding-top:200px;
+  div{
+      text-align: center;
+
+  }
+}
+
+.dashboard{
+  position:relative;
+  .left-sidebar{
+    padding:0 30px;
+    width: 35%;
+    height:100vh;
+    position:fixed;
+    background-image: url(/build/assets/girl.jpg);
+    background-size: cover;
+    background-position: 50% 100%;
+    top:0;
+    left:0;
+  }
+  main{
+    width:65%;
+    position:relative;
+    left:35%;
+    top:0;
+    padding: 120px 30px 30px 30px;
+  }
+
+  .new-class{
+    background-color:rgba(255, 255, 255, 0.8);
+    margin:0 auto;
+    max-width:300px;
+    input, textarea{
+      display:block;
+      background-color:white;
+      width:100%;
+    }
+    form{
+      padding:0 15px 15px 15px;
+      button{
+        width:100%;
+        margin-top:15px;
+      }
+      label{
+        margin-top:5px;
+        margin-bottom:3px;
+        display:block;
+      }
+      .small-group{
+        display:inline-block;
+        width:50%;
+        input{
+          width:90px;
+        }
+      }
+    }
+    h3{
+      text-align:center;
+      font-size:1.8rem;
+      background-color: $green;
+      padding:10px 20px;
+      color:white;
+      display:block;
+    }
+  }
+  .quote{
+    position:absolute;
+    right:30px;
+    top:80px;
+    max-width:300px;
+    text-align:right;
+    color:$mid-grey;
+    font-size:1.3;
+  }
+  h2{
+    margin-top:30px;
+    margin-bottom:40px;
+    color:$green;
+  }
+  h3{
+    font-size:2rem;
+    margin-bottom:20px;
+  }
+  .popup{
+    text-align: center;
+    font-style : italic;
+    margin:0 auto;
+    margin-top:40px;
+    margin-bottom:40px;
+  }
+  .small-notice{
+    font-style : italic;
+    margin-bottom: 30px;
+    color:$mid-grey;
+    font-size: 1.4rem;
+  }
+  .teacher-link{
+    text-align:center;
+    padding-bottom:10px;
+    background-color:rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 3px 1px 0px rgba(0, 0, 0, 0.05);
+    margin:0 auto;
+    margin-top:100px;
+    max-width:300px;
+    white-space: pre-line; /* CSS 3.0 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    word-wrap: break-word; /* IE 5+ */
+    h3{
+      text-align:center;
+      font-size:1.8rem;
+      background-color: $green;
+      padding:10px 20px;
+      color:white;
+      display:block;
+    }
+    p{
+      margin-top:10px;
+      padding:0 15px;
+    }
+  }
+  .become-teacher{
+    button{
+      position:relative;
+      left:-10px;
+      background-color: $light-grey;
+      color:$dark-grey;
+      span{
+        margin-right:15px;
+      }
+      &:hover{
+        color:$mid-grey;
+      }
+    }
+    form{
+      width:100%;
+      max-width:300px;
+      label{
+        display:block;
+      }
+      textarea{
+        height:200px;
+        display:block;
+        width:100%;
+        border:none;
+        background-color: white;
+        box-shadow:$box-shadow;
+        padding:10px;
+      }
+      .submit{
+        width:100%
+      }
+      h3{
+        color:$green;
+        font-size:2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px){
+  .dashboard{
+    .left-sidebar{
+      width: 100%;
+      height:auto;
+      min-height: 300px;
+      position:static;
+      top:auto;
+      left:auto;
+      float:left;
+      padding-bottom: 100px;
+    }
+    main{
+      width:100%;
+      left:0;
+    }
+  }
+}
+
+

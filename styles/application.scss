@@ -1,0 +1,109 @@
+// This is the top-level scss file. Import all other files in here.
+@import 'home';
+@import 'navbar';
+@import 'normalize';
+@import 'vars';
+@import 'dashboard';
+@import 'conference';
+@import 'teacher';
+@import 'class_article';
+
+.container{
+  max-width:1400px;
+}
+
+.container-main{
+  max-width:650px;
+  margin:0 auto;
+}
+
+.container-sidebar{
+  max-width:300px;
+  margin:0 auto;
+}
+
+html {
+ box-sizing: border-box;
+ font-family: 'Assistant', sans-serif;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body{
+ width:100%;
+ position:relative;
+ top:0;
+ left:0;
+ background-color:$light-grey;
+ font-family: 'Assistant', sans-serif;
+ font-size: 1.4rem;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none !important;
+}
+
+textarea, input{
+  padding:5px 10px;
+  border:none;
+}
+
+.btn{
+ border-radius:0px;
+ font-size:1.4rem;
+}
+.btn-default{
+ background-color: $green;
+ border:1px solid $green;
+ color:white;
+ &:hover{
+     background-color:white;
+     border:1px solid $green;
+     color:$green;
+ }
+}
+
+a{
+  text-decoration: none;
+      color:black;
+  &:hover{
+    text-decoration: none;
+
+  }
+}
+
+li{
+ list-style: none;
+}
+ul{
+ margin:0;
+ padding:0;
+}
+
+.btn-clear{
+ background-color:white;
+ border:1px solid $green;
+ color:$green;
+ &:hover{
+
+   background-color: $green;
+   border:1px solid white;
+   color:white;
+ }
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+

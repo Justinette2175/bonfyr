@@ -1,0 +1,120 @@
+nav {
+ height: 45px;
+ padding: 0 30px;
+ background-color: $green;
+ position: fixed;
+ top:0;
+ left:0;
+ width:100%;
+ z-index: 100;
+
+ h1 {
+   position: relative;
+   top: 8px;
+   font-size: 2.5rem;
+   display: inline;
+   color:white;
+   letter-spacing: .1rem;
+   span{
+    top:0px;
+   }
+   a {
+     color: white;
+     &:hover {
+       text-decoration: none;
+       cursor: pointer;
+       color: white;
+     }
+   }
+ }
+
+ span {
+   position: relative;
+   top: 2px;
+ }
+
+ #login-input{
+   position: absolute;
+   right: 30px;
+   top: 5px;
+   margin-right:5px;
+   color: white;
+   button{
+       font-size: 1.4rem;
+       margin-left: 20px;
+     &#logout {
+       background-color: $green;
+       border: solid 1px white;
+       color: white;
+     }
+      &#dashboard {
+       border: solid 1px white;
+     }
+     &#login{
+      margin-left:10px;
+     }
+   }
+   input{
+     display: inline-block;
+     width:100px;
+     background-color: $green;
+     border:1px solid white;
+     //background-color: rgba(255, 255, 255, .8);
+     margin-right: 10px;
+     transform: translateY(-50%);
+     color:white;
+     position:relative;
+     top:18px;
+     //border:none;
+     padding:5px 5px;
+     &:first-child{
+      width:155px;
+     }
+   }
+ }
+
+ #username {
+   margin-right: 5px;
+ }
+}
+
+@media screen and (max-width: 700px){
+  nav{
+    padding:0 15px;
+    .logged-in-as{
+      color:$dark-grey;
+      position:absolute;
+      right:0;
+      top:50px;
+    }
+    #login-input{
+   position: absolute;
+   right: 15px;
+   margin-right:5px;
+   color: white;
+    }
+    main{
+      width:100%;
+      left:0;
+    }
+  }
+}
+
+@media screen and (max-width: 435px){
+  nav{
+    h1{
+      font-size:2rem;
+      top:11px;
+    }
+    button{
+      font-size: 1.2rem;
+    }
+    .glyphicon{
+        display:none;
+      }
+  }
+}
+
+
+
+

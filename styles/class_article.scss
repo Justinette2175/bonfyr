@@ -1,0 +1,116 @@
+article.class{
+  position:relative;
+  background-color: white;
+  padding:5px 30px;
+  box-shadow: 2px 3px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom:20px;
+  min-height:115px;
+  &.giving-class{
+    border-right:60px solid $green;
+  }
+  &.teacher-profile-class{
+    border-right:100px solid $green;
+  }
+  .class-info{
+    width:100%;
+    max-width:220px;
+    float: left;
+  }
+  h4{
+    font-weight:bold;
+    font-size:1.7rem;
+  }
+  a{
+    margin-bottom: 15px;
+  }
+  p{
+    margin-top:10px;
+    margin-bottom: 0;
+  }
+  li{
+    span{
+      font-size:.9rem;
+      margin-right:10px;
+    }
+  }
+  strong{
+    color:$green;
+  }
+  .class-date{
+    position:absolute;
+    right:0;
+    margin-top:10px;
+    width:90px;
+    text-align:center;
+    span{
+      display:block;
+      margin:0;
+      padding:0;
+      font-size:1.5rem;
+    }
+    .year{
+      font-size:1.1rem;
+    }
+    .month{
+    }
+    .day{
+      color:$green;
+      font-size:3rem;
+      line-height:2.2rem;
+      margin:3px 0;
+    }
+    .time{
+      text-transform: uppercase;
+    }
+  }
+  .class-delete{
+    position:absolute;
+    right:-60px;
+    width:60px;
+    top:0;
+    text-align:center;
+    height:100%;
+    color:white;
+    font-size:2rem;
+    span{
+      height:30px;
+      width:30px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin-top:-15px;
+      margin-left:-15px;
+    }
+    &:hover{
+      background-color:$dark-green;
+      cursor:pointer;
+    }
+  }
+  .cost{
+    position:absolute;
+    right:-100px;
+    width:100px;
+    top:15px;
+    text-align:center;
+    height:100%;
+    color:white;
+    font-size:1.4rem;
+  }
+  .register{
+    position:absolute;
+    right:-100px;
+    width:100px;
+    top:40px;
+    button{
+      background-color:white;
+    }
+    p{
+      text-align: center;
+      padding:0 5px;
+      color:white;
+    }
+  }
+  .StripeCheckout{
+    margin-left:8px;
+  }
+}

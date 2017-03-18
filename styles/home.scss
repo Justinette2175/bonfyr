@@ -1,0 +1,134 @@
+@import 'vars';
+
+
+.home{
+  .left-sidebar{
+    width: 50%;
+    height:100vh;
+    position:fixed;
+    background-image: url(/build/assets/firecracker-girl.jpg);
+    background-size: cover;
+    background-position: 50% 100%;
+    top:0;
+    left:0;
+  }
+  main{
+    width:50%;
+    position:absolute;
+    right:0;
+    top:0;
+    padding: 100px 30px 50px 30px;
+  }
+  form.registerStudent{
+    padding:10px 20px;
+    position: relative;
+  }
+  .about{
+    max-width:400px;
+    margin:0 auto;
+    h2{
+      margin-bottom:30px;
+    }
+    #dashboard{
+      margin-top:30px;
+    }
+  }
+  .register{
+    background-color: white;
+    width:100%;
+    max-width:400px;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:30px;
+    box-shadow: $box-shadow;
+    .btn-panel{
+      font-size:1.6rem;
+      width:50%;
+      background-color:$mid-grey;
+      border:none;
+      border-top:10px solid transparent;;
+      color:white;
+      span{
+        white-space: pre-line; /* CSS 3.0 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        white-space: -moz-pre-wrap; /* Mozilla */
+        word-wrap: break-word; /* IE 5+ */
+      }
+    }
+    .btn-panel-active{
+      background-color:$green;
+      border:none;
+      border-top:10px solid $green;
+      color:white;
+      span{
+        position:relative;
+        top:-5px;
+      }
+
+    }
+    input{
+      width:50%;
+      border:none;
+      padding:2px 5px;
+      background-color:$light-grey;
+      margin:10px 0;
+    }
+    textarea{
+      height:100px;
+      display:block;
+      width:100%;
+      border:none;
+      background-color: $light-grey;
+    }
+    label{
+      display:block;
+    }
+    #register-btn{
+      display:block;
+      width:100%;
+      position:absolute;
+      left:0;
+      margin-top:10px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  .home{
+    .left-sidebar{
+      width: 35%;
+    }
+    main{
+      width: 65%;
+    }
+  }
+}
+
+@media screen and (max-width: 610px){
+  .home{
+    .left-sidebar{
+      width: 100%;
+    }
+    main{
+      width: 100%;
+      .about{
+        background-color: rgba(255,255,255, 0.8);
+        padding:15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px){
+  .home{
+    .left-sidebar{
+      width: 100%;
+    }
+    main{
+      width: 100%;
+    }
+  }
+}
+
+
