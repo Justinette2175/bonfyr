@@ -1,9 +1,8 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config');
-var stripe = require("stripe")(
-  "sk_test_6ywOLfo2NJahdTVJq8YDMBqo"
-);
+const ENV = process.env.ENV || "development";
+var stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 
 new WebpackDevServer(webpack(config), {

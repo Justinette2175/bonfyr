@@ -16,6 +16,8 @@ exports.up = function(knex, Promise) {
       table.foreign('user_id').references('users.id');
       table.string('description');
       table.string('avatar');
+      table.string('stripe_user_id');
+      table.string('stripe_publishable_key');
     }),
     knex.schema.createTable('resources', function (table) {
       table.increments('id');
@@ -41,7 +43,7 @@ exports.up = function(knex, Promise) {
       table.foreign('user_id').references('users.id');
       table.string('class_id');
       table.foreign('class_id').references('class.id');
-      table.float('price', [2]);
+      table.integer('amount');
       table.timestamp('created_at').defaultTo(knex.fn.now());
     }),
     knex.schema.createTable('class_user', function (table) {

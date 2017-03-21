@@ -10,6 +10,8 @@ const bcrypt = require('bcrypt');
 var AccessToken = require('twilio').AccessToken;
 var VideoGrant = AccessToken.VideoGrant;
 
+var stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
 const knexConfig  = require("./knexfile");
 const knex = require('knex')(knexConfig[ENV]);
 const knexLogger  = require('knex-logger');
