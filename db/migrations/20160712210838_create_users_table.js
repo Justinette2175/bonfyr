@@ -44,6 +44,10 @@ exports.up = function(knex, Promise) {
       table.string('class_id');
       table.foreign('class_id').references('class.id');
       table.integer('amount');
+      //amount is in cents!
+      table.string('currency');
+      table.string('charge_id');
+      table.string('stripe_token');
       table.timestamp('created_at').defaultTo(knex.fn.now());
     }),
     knex.schema.createTable('class_user', function (table) {
